@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>図書検索システム</title>
+</head>
+<body>
+<!-- 検索フォーム -->
+<form id="form" action="#">
+    書籍名 <input type="text" name="title">
+    <input type="submit" value="検索">
+</form>
+
+<!-- ここに結果を表示 -->
+<ul id="list"></ul>
+<script src="books_db.js"></script>
+<script>
+window.onload = function() {
+    let list = document.getElementById('list');
+    
+    document.getElementById('form').onsubmit = function() {
+        // 現在表示されている書籍情報一覧をクリア
+        list.textContent = '';
+        
+        // ここに適切な処理を記述
+        for(let i=0;i<books.length;i++){
+          let li=document.createElement('li');
+          li.textContent=books[i].title+'、'+books[i].author+'、'+books[i].shelfNo;
+          document.getElementById('list').appendChild(li);
+        }
+     }
+}
+</script>
+</body>
+</html>
