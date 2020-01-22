@@ -1,0 +1,23 @@
+let books = [
+    {'title': '改訂新版JavaScript本格入門', 'author': '山田 祥寛', 'shelfNo': '2B'},
+    {'title': '確かな力が身につくJavaScript「超」入門', 'author': '狩野 祐東', 'shelfNo': '2B'},
+    {'title': '徹底マスター JavaScriptの教科書', 'author': '磯博', 'shelfNo': '2B'},
+    {'title': 'いちばんよくわかるHTML5&CSS3デザインきちんと入門 ', 'author': '狩野 祐東', 'shelfNo': '2A'},
+    {'title': 'これからWebをはじめる人のHTML&CSS，JavaScriptのきほんのきほん', 'author': 'たにぐちまこと', 'shelfNo': '2A'},
+    {'title': 'HTML5&CSS3デザインブック', 'author': 'エビスコム', 'shelfNo': '2A'},
+    {'title': 'Webフロントエンド ハイパフォーマンス チューニング', 'author': '久保田 光則', 'shelfNo': '2A'},
+    {'title': '新・明解C言語 入門編', 'author': '柴田 望洋', 'shelfNo': '2C'},
+    {'title': 'C言語ポインタ完全制覇', 'author': '前橋 和弥', 'shelfNo': '2C'},
+    {'title': 'やさしいJava', 'author': '高橋 麻奈', 'shelfNo': '2C'},
+    {'title': '新・明解Java入門', 'author': '柴田 望洋', 'shelfNo': '2C'},
+    {'title': '新・明解 Javaで学ぶアルゴリズムとデータ構造', 'author': '柴田 望洋', 'shelfNo': '2C'},
+    {'title': 'コンピューター&テクノロジー解体新書', 'author': 'ロン・ホワイト', 'shelfNo': '1A'},
+    {'title': '人工知能は人間を超えるか ディープラーニングの先にあるもの', 'author': '松尾 豊', 'shelfNo': '1A'},
+    {'title': '2020年人工知能時代 僕たちの幸せな働き方', 'author': '藤野 貴教', 'shelfNo': '1A'},
+    {'title': 'ゼロから作るDeep Learning ―Pythonで学ぶディープラーニングの理論と実装', 'author': '斎藤 康毅', 'shelfNo': '1B'},
+    {'title': 'ITエンジニアのための機械学習理論入門', 'author': '中井悦司', 'shelfNo': '1B'},
+    {'title': 'ITエンジニアが覚えておきたい英語動詞30', 'author': '板垣 政樹', 'shelfNo': '1A'},
+    {'title': '完全独習 統計学入門', 'author': '小島 寛之', 'shelfNo': '1B'},
+    {'title': 'マンガでわかる統計学', 'author': '高橋 信', 'shelfNo': '1B'},
+    {'title': '独習PHP', 'author': '山田 祥寛', 'shelfNo': '2B'}
+];
