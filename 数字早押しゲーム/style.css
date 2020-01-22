@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+body {
+    text-align: center;
+}
+
+table {
+    color: #000000;
+    font-size: 48px;
+    display: inline-block;
+}
+
+td {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+}
+
+#message {
+    font-size: 48px;
+}

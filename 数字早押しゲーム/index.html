@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>数字早押しゲーム</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>数字早押しゲーム</h1>
+<!-- クリアしたときのメッセージをここに表示 -->
+<p id="message"></p>
+
+<!-- ゲーム盤 -->
+<table id="game_board"></table>
+
+<script src="initialize.js"></script>
+<script>
+let width = 5, height = 5;
+let lastNumber = width * height;
+
+window.onload = function() {
+    initialize();
+
+    // 以降に適切な処理を記述
+    let nextNumber = 1;  // 次に押されるべき数字（最初は1）
+
+       for (let i = 1; i <= lastNumber; i++) {
+           document.getElementById(i).onclick = function() {
+               if (parseInt(this.id) === nextNumber) {
+                   // 正しい数字が押されたならば
+
+                   // 数字を消す
+                   this.textContent = '';
+
+                   // 次に押されるべき数字を1進める
+                   nextNumber++;
+               }
+
+               if (nextNumber === lastNumber + 1) {
+                   message.innerHTML="クリア！";
+               }
+           }
+       }
+   }
+</script>
+</body>
+</html>
